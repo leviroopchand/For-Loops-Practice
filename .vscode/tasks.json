@@ -1,0 +1,14 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "npm",
+			"script": "test-5",
+			"problemMatcher": [
+				"$go"
+			],
+			"label": "npm: test-5",
+			"detail": "vitest --run e5."
+		}
+	]
+}

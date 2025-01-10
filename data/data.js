@@ -1,4 +1,4 @@
-export const bankAccounts = [
+export let bankAccounts = [
   {
     id: 1,
     name: "Susan",
