@@ -1,11 +1,18 @@
 
 // EXERCISE 15
-// Please, read the exercise-info/concat.md to get the initial data of what is the expected result of this exercise.
+// Please, read the exercise-info/concat.md to get the initial data of what is the expected comboArr of this exercise.
 // concatArrays(['d', 'r', 'a'], ['f', 'y']) => ['d', 'r', 'a', 'f', 'y']
 // NOTE: You can NOT use the array.concat() method in your code
 
 export function concatArrays(arr1, arr2) {
-  // Your code goes here...
+    let comboArr = [];
+    for (let i = 0; i < arr1.length; i++) {
+        comboArr.push(arr1[i]);
+    }
+    for (let j = 0; j < arr2.length; j++) {
+        comboArr.push(arr2[j]);
+    }
+    return comboArr;
 
 }
 

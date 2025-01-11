@@ -9,10 +9,11 @@ export function getClientWithNoMoney(array) {
       let account = array[index];
       if (account["balance"] === 0.0) {
         brokeClient.push(account["name"])
-      
-      console.log(brokeClient)
-    }       
-  }}
+      }
+    }
+
+  return brokeClient;
+}
 
   getClientWithNoMoney(bankAccounts)
 

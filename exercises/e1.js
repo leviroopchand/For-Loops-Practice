@@ -3,9 +3,12 @@
 // Return an array of numbers in 1..10
 // getFirstTenNumbers() => [1, 2, 3, ... , 10]
 
-export function getFirstTenNumbers() {
-  // Your code goes here...
-
+export function getFirstTenNumbers(arr) {
+  if (arr.length < 10) {
+    return arr;
+  }
+ 
+  return arr.slice(0, 10);
 }
 
 // === TEST YOURSELF ===

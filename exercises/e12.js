@@ -4,10 +4,29 @@
 // Array example: bankAccounts in /data/data.js
 // getAllDepositsGreaterThanOneHundred(bankAccounts) => [3432, 43242.34, 23432]
 
-export function getAllDepositsGreaterThanOneHundred(array) {
-  // Your code goes here...
+import { bankAccounts } from "../data/data.js";
 
+export function getAllDepositsGreaterThanOneHundred(array) {
+
+  let bigDeposits = [];
+
+  for (let index = 0; index < array.length; index++) {
+    
+    let account = array[index];
+    let deposits = account["deposits"];
+    
+    for (let j = 0; j < deposits.length; j++) {
+      if (deposits[j] > 100) {
+        bigDeposits.push(deposits[j]);
+      }
+  }
+  }
+
+  return bigDeposits;
+  
 }
+
+console.log(getAllDepositsGreaterThanOneHundred(bankAccounts))
 
 
 

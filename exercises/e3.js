@@ -29,8 +29,18 @@ export function getAverage(array) {
  * */ 
 
 export function getStringSum(str) {
-  // Your code goes here...
+  let numbers = str.match(/[0-9]/g);
 
+  if (!numbers) {
+    return 0;
+  }
+  
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum += parseInt(numbers[i], 10);
+  }
+
+  return sum;
 }
 
 

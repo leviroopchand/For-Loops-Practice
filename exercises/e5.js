@@ -9,7 +9,7 @@ export function getAllClientNames(array) {
   for (let index = 0; index < array.length; index++) {
           let account = array[index];
           clients.push(account["name"])}
-          console.log(clients)
+          return clients;
 }
 
 getAllClientNames(bankAccounts)
