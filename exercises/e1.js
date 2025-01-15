@@ -4,11 +4,12 @@
 // getFirstTenNumbers() => [1, 2, 3, ... , 10]
 
 export function getFirstTenNumbers(arr) {
-  if (arr.length < 10) {
-    return arr;
+  let newArr = [];
+  for (let i = 1; i <= 10; i++) {
+    newArr.push(i);
   }
  
-  return arr.slice(0, 10);
+  return newArr;
 }
 
 // === TEST YOURSELF ===
