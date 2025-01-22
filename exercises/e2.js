@@ -4,26 +4,13 @@
 
 export function getNumbersWithSquareRoots(max) {
   let squNum = [];
-  let numbers = [];
-
-  function innerFunc(max) {
-    for (let i = 0; i <= max; i++) {
-      numbers.push(i);
-    }
-
-    for (let i = 0; i < numbers.length; i++) {
-      if (Number.isInteger(Math.sqrt(numbers[i]))) {
-        squNum.push(numbers[i]);
-      }
-    }
-
-    return squNum;
+  
+  for (let i = 0; i * i < max; i++) {
+    squNum.push(i * i);
   }
-
-  return innerFunc(max);
+  return squNum;
 }
 
-console.log(getNumbersWithSquareRoots(20));
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-2"

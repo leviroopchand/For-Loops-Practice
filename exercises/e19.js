@@ -7,7 +7,7 @@
 export function reverseArray(array) {
 let reversedArray = [];
 
-for (let index = array.length -1; index >- 0; index--) {
+for (let index = array.length -1; index >= 0; index--) {
   reversedArray.push(array[index]);
 }
 
