@@ -4,7 +4,6 @@
 // Array example: bankAccounts in /data/data.js
 // getAllWithdrawals(bankAccounts) => [3432, 0, 43242.34, 0, 23432]
 
-import { bankAccounts } from "../data/data.js";
 
 export function getAllWithdrawals(array) {
 let accountWithdrawals = [];
@@ -28,8 +27,6 @@ for (let index = 0; index < accountWithdrawals.length; index++) {
 
 return withdrawalSum;
 }
-
-console.log(getAllWithdrawals(bankAccounts))
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-11"

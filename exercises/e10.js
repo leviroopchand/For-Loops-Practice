@@ -3,7 +3,6 @@
 // Array example: bankAccounts in /data/data.js
 // getClientsWithLetterInName(bankAccounts, 'e') => ['Kevin', 'Steven', ...]
 
-import { bankAccounts } from "../data/data.js";
 
 export function getClientsWithLetterInName(array, letter) {
   let clients = [];
@@ -15,8 +14,6 @@ export function getClientsWithLetterInName(array, letter) {
   }
   return clients;
 }
-
-console.log(getClientsWithLetterInName(bankAccounts, 'l'))
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-10"

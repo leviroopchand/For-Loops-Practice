@@ -4,7 +4,6 @@
 // Array example: bankAccounts in /data/data.js
 // getClientsWithBalanceOverOneHundred(array) => [{ name: 'Name1', balance: 32, ... }, { name: 'Name2', balance: 3523, ... }]
 
-import { bankAccounts } from "../data/data.js";
 
 export function getClientsWithBalanceOverOneHundred(array) {
   let richClients = [];

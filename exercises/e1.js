@@ -3,7 +3,7 @@
 // Return an array of numbers in 1..10
 // getFirstTenNumbers() => [1, 2, 3, ... , 10]
 
-export function getFirstTenNumbers(arr) {
+export function getFirstTenNumbers() {
   let newArr = [];
   for (let i = 1; i <= 10; i++) {
     newArr.push(i);

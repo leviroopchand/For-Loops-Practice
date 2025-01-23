@@ -12,7 +12,6 @@ export function getAllClientNames(array) {
   return clients;
 }
 
-getAllClientNames(bankAccounts)
 
 
 

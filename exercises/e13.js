@@ -9,7 +9,6 @@
 // Phil's Account Object
 // ]
 
-import { bankAccounts } from "../data/data.js";
 
 export function getAllAccountsWithSumsOfDepositsLess2000(array) {
     let accountDeposits = [];
@@ -34,7 +33,6 @@ export function getAllAccountsWithSumsOfDepositsLess2000(array) {
 return accountDeposits;
 }
 
-console.log(getAllAccountsWithSumsOfDepositsLess2000(bankAccounts))
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-13"
 // If the test has all tests passed, switch to the next exercise file
