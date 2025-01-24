@@ -6,25 +6,21 @@
 
 
 export function getAllWithdrawals(array) {
-let accountWithdrawals = [];
-
-for (let index = 0; index < array.length; index++) {
-  let account = array[index];
-  accountWithdrawals.push(account["withdrawals"]);
-}
 
 let withdrawalSum = [];
 
-for (let index = 0; index < accountWithdrawals.length; index++) {
+for (let user of array) {
   let sum = 0;
-  let withdrawalAmt = accountWithdrawals[index];
-
-  for (let j = 0; j < withdrawalAmt.length; j++) {
-    sum += withdrawalAmt[j];
+  if (!user.withdrawals){
+    user.withdrawals = 0;
   }
-  withdrawalSum.push(sum);
-}
-
+  else {
+    for (let withdrawal of user.withdrawals){
+      sum += withdrawal;
+    }
+  }
+    withdrawalSum.push(sum);
+} 
 return withdrawalSum;
 }
 

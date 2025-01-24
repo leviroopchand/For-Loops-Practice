@@ -8,10 +8,16 @@ export function getClientsWithLetterInName(array, letter) {
   let clients = [];
   for (let index = 0; index < array.length; index++) {
     let account = array[index];
-    if (account["name"].includes(letter)) {
-      clients.push(account["name"])
+    let name = account["name"];
+    let containsLetter = false;
+
+    for (let j = 0; j < name.length; j++) {
+      if (name[j] === letter) {
+        containsLetter = true;
+      clients.push(name);
     }
   }
+}
   return clients;
 }
 
